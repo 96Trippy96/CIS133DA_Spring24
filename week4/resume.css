@@ -8,15 +8,15 @@ h1, h2, h3 {
     color: rgb(33, 87, 51);
 }
 h1 {
-    font-size: 3.6rem;
+    font-size: 2rem;
     text-align: center;
     background-color: rgb(75, 133, 94);
 }
 h2 {
-    font-size: 2.4rem;
+    font-size: 1.6rem;
 }
 h3 {
-    font-size: 2rem;
+    font-size: 1.4rem;
 }
 hr {
     border: .5rem solid rgb(33, 87, 51);
@@ -26,4 +26,15 @@ hr {
 }
 ul {
     list-style-type: square;
+}
+@media only screen and (min-width: 768px) {
+    body {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    body {
+        font-size: 20px;
+    }
 }
