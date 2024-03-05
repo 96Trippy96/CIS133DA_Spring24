@@ -1,0 +1,47 @@
+body {
+    background: linear-gradient(to bottom, yellow, red);
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+table.population {
+    width: 40%;
+    margin: 0 auto;
+    padding: 25px 0;
+}
+
+.red-heading {
+    background-color: red;
+    color: white;
+}
+
+.light-yellow-footer {
+    background-color: lightyellow;
+}
+
+table.population tbody tr:nth-child(even) {
+    background-color: yellow;
+}
+
+.right-align {
+    text-align: right;
+}
+.image-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.image-container img {
+    width: 5%; 
+    height: 10px;
+    border: 2px solid black;
+    margin: 10px;
+}
+
+.city-image {
+    width: 5%; 
+    height: 10px; 
+    margin: 10px;
+}
