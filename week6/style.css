@@ -16,9 +16,9 @@
     display: inline-block;
     padding: 10px 20px;
     text-decoration: none;
-    color: #fff;
+    color: #72fa02;
 }
 
 #menu li a:hover {
-    background-color: #555;
+    background-color: #4af307fa;
 }
