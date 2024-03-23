@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Dog's Life - Contact Us</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" type="image/x-icon" href="./images/pawPrint.png" />
+</head>
+<body>
+    <header>
+        <nav id="navBar">
+            <ul id="menu">
+                <li><a id="index" href="./home.html">Home</a></li>
+                <li><a id="selectPet" href="./selectPet.html">Selecting a Pet</a></li>
+                <li><a id="grooming" href="./grooming.html">Grooming</a></li>
+                <li><a id="location" href="./location.html">Our Location</a></li>
+                <li><a id="contact" href="./contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>A Dog's Life - Contact Us</h1>
+        <form action="submit_form.php" method="post">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" required></textarea><br>
+            <input type="submit" value="Submit">
+        </form>
+    </main>
+    <footer id="footer">
+        <div class="contact-info">
+            <p>Contact us</p>
+            <p>112-222-2222</p>
+            <p>dog@dog.com</p>
+            <p>123 Dogwalk Street, 85255</p>
+        </div>
+    </footer>
+    <script src="./components/script.js"></script>
+</body>
+</html>
