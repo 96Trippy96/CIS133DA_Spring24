@@ -7,6 +7,10 @@ body {
     margin: 0px;
     font-family: Arial, Helvetica, sans-serif;
     height: 100vh;
+    display: grid;
+    grid-template-rows: 20vh auto 10vh;
+    grid-template-columns: 20vw auto;
+    grid-template-areas: "header header" "aside main" "footer footer";
 }
 
 header, aside, main, footer {
@@ -17,10 +21,12 @@ header, aside, main, footer {
 header {
     color: white;
     background-color: blue;
+    grid-area: header;
 }
 
 aside {
     background-color: yellow;
+    grid-area: aside;
 }
 
 aside > img {
@@ -28,14 +34,22 @@ aside > img {
 }
 
 main {
+    grid-area: main;
+    
 }
 
 footer {
     color: white;
     background-color: blue;
+    grid-area: footer;
 }
 
-header, footer {
+header, footer, #petWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15rem;
+    justify-content: center;
+    align-items: center;
 }
 
 h1 {
