@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Form - Company Logo Shirt</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <div class="form-container">
+        <form action="/submit-your-order" method="post">
+            <table>
+                <tr>
+                    <td><img src="images/tshirt.jpg" alt="Company Logo Shirt" style="width:100%;"></td>
+                    <td>
+                        <label for="color">Color:</label>
+                        <select id="color" name="color">
+                            <option>Select Color</option>
+                            <option>Blue</option>
+                            <option>Black</option>
+                            <option>White</option>
+                        </select>
+
+                        <label for="quantity">Quantity:</label>
+                        <input type="number" id="quantity" name="quantity" class="form-control">
+
+                        <label>Size:</label>
+                        <input type="radio" id="small" name="size" value="Small"><label for="small">Small</label>
+                        <input type="radio" id="medium" name="size" value="Medium"><label for="medium">Medium</label>
+                        <input type="radio" id="large" name="size" value="Large"><label for="large">Large</label>
+
+                        <label><input type="checkbox" id="logo" name="logo" value="Include Logo"> Include Logo</label>
+                        <input type="file" id="file" name="file">
+                    </td>
+                </tr>
+            </table>
+            <hr>
+            <table>
+                <tr>
+                    <td>
+                        <label for="fname">First Name:</label>
+                        <input type="text" id="fname" name="fname" placeholder="First Name" class="form-control" tabindex="1">
+                    </td>
+                    <td>
+                        <label for="lname">Last Name:</label>
+                        <input type="text" id="lname" name="lname" placeholder="Last Name" class="form-control" tabindex="2">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <label for="address">Street Address:</label>
+                        <input type="text" id="address" name="address" placeholder="Street Address" class="form-control" tabindex="3">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="city">City:</label>
+                        <input type="text" id="city" name="city" placeholder="City" class="form-control" tabindex="4">
+                    </td>
+                    <td>
+                        <label for="state">State:</label>
+                        <input type="text" id="state" name="state" placeholder="State" class="form-control" tabindex="5">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="zip">ZIP:</label>
+                        <input type="text" id="zip" name="zip" placeholder="ZIP Code" class="form-control" tabindex="6">
+                    </td>
+                    <td>
+                        <label for="email">Email Address:</label>
+                        <input type="email" id="email" name="email" placeholder="Email Address" class="form-control" tabindex="7">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="phone">Phone Number:</label>
+                        <input type="text" id="phone" name="phone" placeholder="Phone Number" class="form-control" tabindex="8">
+                    </td>
+                    <td>
+                        <label for="date">Best Delivery Date:</label>
+                        <input type="date" id="date" name="date" class="form-control" tabindex="9">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <label for="instructions">Special Instructions:</label>
+                        <input type="text" id="instructions" name="instructions" placeholder="Special Instructions" class="form-control" tabindex="10">
+                    </td>
+                </tr>
+            </table>
+            <button type="submit" class="button">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
