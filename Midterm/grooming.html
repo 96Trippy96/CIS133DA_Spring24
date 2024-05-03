@@ -6,6 +6,23 @@
     <title>A Dog's Life - Grooming Services</title>
     <link rel="stylesheet" href="./style.css">
     <link rel="icon" type="image/x-icon" href="./images/pawPrint.png" />
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: left;
+        }
+        .grooming-image {
+            width: 100px;
+            height: 100px;
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -21,38 +38,43 @@
     </header>
     <main>
         <h1>A Dog's Life - Our Grooming Services</h1>
-        <div class="grooming-container">
-            <div id="clean01" class="grooming-image" style="background-image: url('./images/clean01.jpg');"></div>
-            <div class="service">
-                <p>Deluxe Everything</p>
-                <p>$250</p>
-            </div>
-            <div id="clean02" class="grooming-image" style="background-image: url('./images/clean02.jpg');"></div>
-            <div class="service">
-                <p>Basic</p>
-                <p>$50</p>
-            </div>
-            <div id="clean03" class="grooming-image" style="background-image: url('./images/clean03.jpg');"></div>
-            <div class="service">
-                <p>Buzzcut</p>
-                <p>$10</p>
-            </div>
-            <div id="clean04" class="grooming-image" style="background-image: url('./images/clean04.jpg');"></div>
-            <div class="service">
-                <p>Nail Trimming</p>
-                <p>$20</p>
-            </div>
-            <div id="clean05" class="grooming-image" style="background-image: url('./images/clean05.jpg');"></div>
-            <div class="service">
-                <p>Ear Cleaning</p>
-                <p>$10</p>
-            </div>
-            <div id="clean06" class="grooming-image" style="background-image: url('./images/clean06.jpg');"></div>
-            <div class="service">
-                <p>Flea and Tick Bath</p>
-                <p>$45</p>
-            </div>
-        </div>
+        <table>
+            <tr>
+                <th>Service</th>
+                <th>Image</th>
+                <th>Price</th>
+            </tr>
+            <tr>
+                <td>Deluxe Everything</td>
+                <td><div class="grooming-image" style="background-image: url('./images/clean01.jpg');"></div></td>
+                <td>$250</td>
+            </tr>
+            <tr>
+                <td>Basic</td>
+                <td><div class="grooming-image" style="background-image: url('./images/clean02.jpg');"></div></td>
+                <td>$50</td>
+            </tr>
+            <tr>
+                <td>Buzzcut</td>
+                <td><div class="grooming-image" style="background-image: url('./images/clean03.jpg');"></div></td>
+                <td>$10</td>
+            </tr>
+            <tr>
+                <td>Nail Trimming</td>
+                <td><div class="grooming-image" style="background-image: url('./images/clean04.jpg');"></div></td>
+                <td>$20</td>
+            </tr>
+            <tr>
+                <td>Ear Cleaning</td>
+                <td><div class="grooming-image" style="background-image: url('./images/clean05.jpg');"></div></td>
+                <td>$10</td>
+            </tr>
+            <tr>
+                <td>Flea and Tick Bath</td>
+                <td><div class="grooming-image" style="background-image: url('./images/clean06.jpg');"></div></td>
+                <td>$45</td>
+            </tr>
+        </table>
     </main>
     <footer id="footer">
         <div class="contact-info">

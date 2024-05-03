@@ -7,17 +7,14 @@
     <link rel="stylesheet" href="./style.css">
     <link rel="icon" type="image/x-icon" href="./images/pawPrint.png" />
     <style>
-        .dog-info {
-            display: flex;
-            align-items: center;
-            margin-bottom: 20px;
+        table {
+            width: 100%;
+            border-collapse: collapse;
         }
-        .dog-name {
-            margin-right: 20px;
-        }
-        .dog-description {
-            margin-left: 20px;
-            font-style: italic;
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: left;
         }
         .dog-image {
             width: 200px;
@@ -38,21 +35,28 @@
     </header>
     <main>
         <h1>A Dog's Life - How to Select the Right Pet</h1>
-        <div class="dog-info">
-            <p class="dog-name">Scruffy</p>
-            <img class="dog-image" src="./images/dog01.jpg" alt="Scruffy">
-            <p class="dog-description">Scruffy is a lovable scamp!</p>
-        </div>
-        <div class="dog-info">
-            <p class="dog-name">Timmy</p>
-            <img class="dog-image" src="./images/dog02.jpg" alt="Timmy">
-            <p class="dog-description">Timmy is a calm good dog that loves to help!</p>
-        </div>
-        <div class="dog-info">
-            <p class="dog-name">Bob</p>
-            <img class="dog-image" src="./images/dog03.jpg" alt="Bob">
-            <p class="dog-description">Bob is a menace to society and should never leave the shelter</p>
-        </div>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Image</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td>Scruffy</td>
+                <td><img class="dog-image" src="./images/dog01.jpg" alt="Scruffy"></td>
+                <td>Scruffy is a lovable scamp!</td>
+            </tr>
+            <tr>
+                <td>Timmy</td>
+                <td><img class="dog-image" src="./images/dog02.jpg" alt="Timmy"></td>
+                <td>Timmy is a calm good dog that loves to help!</td>
+            </tr>
+            <tr>
+                <td>Bob</td>
+                <td><img class="dog-image" src="./images/dog03.jpg" alt="Bob"></td>
+                <td>Bob is a menace to society and should never leave the shelter</td>
+            </tr>
+        </table>
     </main>
     <footer id="footer">
         <div class="contact-info">
