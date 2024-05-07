@@ -1,0 +1,85 @@
+/* General reset */
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Navbar Styles */
+#navBar {
+    background-color: black;
+    text-align: center;
+    padding: 1rem;
+}
+
+#menu {
+    width: 100%;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+#menu td {
+    background-color: black;
+    border: 2px solid #fff;
+    padding: 1rem 0.5rem;
+    text-align: center;
+}
+
+#menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Title Section */
+.title-section {
+    margin: 3rem;
+    text-align: left;
+}
+
+.highlight-bar {
+    width: 50px;
+    height: 5px;
+    background-color: #5B2CE3; /* Purple color */
+    margin-bottom: 1rem;
+}
+
+.title-section h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+.title-section hr {
+    border: none;
+    border-top: 1px solid #d3d3d3;
+    width: 150px;
+}
+
+/* Image Section */
+.image-section {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.image-section img {
+    max-width: 80%;
+    height: auto;
+    border: 1px solid #d3d3d3;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: black;
+    color: white;
+    font-size: 1rem;
+}
