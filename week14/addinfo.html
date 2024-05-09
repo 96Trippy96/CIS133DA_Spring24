@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Dummies Input - Submit More Information on MOSFETs</title>
+</head>
+
+<body>
+
+    <div id="navbar">
+        <ul id="menu">
+            <li><a href="homepage.html">Homepage</a></li>
+            <li><a href="whatisamosfet.html">What is a MOSFET?</a></li>
+            <li><a href="whatdotheydo.html">Component Functions</a></li>
+            <li><a href="different.html">Component Comparisons</a></li>
+            <li><a href="LearnMoreMosfet.html">Learn More about MOSFETs</a></li>
+            <li><a href="addinfo.html">Dummies Input</a></li>
+        </ul>
+    </div>
+
+    <main>
+        <h1>Dummies Input: Submit More Information on MOSFETs</h1>
+        <p>If you have additional knowledge or insights about MOSFETs, we'd love to hear them! Please use the form below to share your information.</p>
+        <hr>
+
+        <form id="form" action="submit_info.php" method="post">
+            <fieldset>
+                <legend>Submit Your Information</legend>
+                <div class="form-row">
+                    <label for="name">Your Name:</label>
+                    <input type="text" name="name" id="name" required>
+                </div>
+                <div class="form-row">
+                    <label for="email">Your Email:</label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+                <div class="form-row">
+                    <label for="info_type">Type of Information:</label>
+                    <select name="info_type" id="info_type" required>
+                        <option value="" disabled selected>Select One</option>
+                        <option value="enhancement_mode">Enhancement Mode</option>
+                        <option value="depletion_mode">Depletion Mode</option>
+                        <option value="power">Power MOSFETs</option>
+                        <option value="logic">Logic Level MOSFETs</option>
+                        <option value="dual_gate">Dual-Gate MOSFETs</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="form-row">
+                    <label for="description">Description:</label>
+                    <textarea name="description" id="description" rows="5" required></textarea>
+                </div>
+                <div class="form-row form-actions">
+                    <input type="reset" value="Clear">
+                    <input type="submit" value="Submit">
+                </div>
+            </fieldset>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Component Information Website. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
